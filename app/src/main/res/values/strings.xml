@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AUK Life</string>
+    <string name="welcome">WELCOME!</string>
+    <string name="new_content">Newest at AUK:</string>
+</resources>

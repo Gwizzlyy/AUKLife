@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "16145003855",
+    "project_id": "aukmedia-775d6",
+    "storage_bucket": "aukmedia-775d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16145003855:android:3297556eb6fece855e813a",
+        "android_client_info": {
+          "package_name": "com.gwizz.aukmedia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8ykG8A8M8jUXDGihkXDu6bWRUpOOZ0QI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16145003855:android:4b2ca0e846d0ab0a5e813a",
+        "android_client_info": {
+          "package_name": "com.gwizz.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8ykG8A8M8jUXDGihkXDu6bWRUpOOZ0QI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
