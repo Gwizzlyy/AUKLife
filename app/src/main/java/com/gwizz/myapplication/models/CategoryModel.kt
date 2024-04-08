@@ -3,7 +3,8 @@ package com.gwizz.myapplication.models
 data class CategoryModel(
     val name : String,
     val coverurl : String,
+    val podcasts : List<String>
 
 ) {
-    constructor() : this("", "")
+    constructor() : this("", "", listOf())
 }

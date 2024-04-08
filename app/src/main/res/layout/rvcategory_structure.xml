@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="160dp"
         android:layout_height="250dp"
-        android:scaleType="fitXY"
+
         android:id="@+id/ivThumbnail"/>
 
     <TextView
