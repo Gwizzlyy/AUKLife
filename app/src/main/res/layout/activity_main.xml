@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="24dp"
+
+    android:background="@drawable/home_background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <RelativeLayout
+        android:id="@+id/inner_rLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/tvGreeting"
@@ -20,11 +23,7 @@
             android:textStyle="bold"
             android:letterSpacing="0.2"
             android:layout_marginTop="24dp"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textSize="24sp" />
 
         <ImageView
             android:id="@+id/ivNotifications"
@@ -33,7 +32,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="24dp"
             android:layout_marginTop="24dp"
-            app:srcCompat="@drawable/icon_notificationbell" />
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,9 +43,14 @@
 
             <ImageView
                 android:id="@+id/ivLandingAd"
-                android:layout_width="match_parent"
-                android:layout_height="150"
-                android:src="@drawable/test" />
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:paddingTop="8dp"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:onClick="imgClick"
+                android:src="@drawable/landing_banner"
+                android:focusable="true" />
 
             <TextView
                 android:id="@+id/tvNewContent"
@@ -81,9 +85,24 @@
 
         </LinearLayout>
 
+
+
     </RelativeLayout>
 
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navbar_background"
+        android:hapticFeedbackEnabled="true"
 
+        app:menu="@menu/bottom_menu" />
 
 
 </RelativeLayout>

@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">AUK Life</string>
+    <string name="app_name">AUK Hub</string>
     <string name="welcome">WELCOME!</string>
     <string name="new_content">Newest at AUK:</string>
+    <string name="podcasts_menu">Podcasts</string>
+    <string name="magazines_menu">Magazines</string>
+    <string name="home_menu">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
