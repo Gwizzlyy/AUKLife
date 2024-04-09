@@ -1,9 +1,12 @@
 package com.gwizz.myapplication.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
+import com.gwizz.myapplication.ExoplayerClass
+import com.gwizz.myapplication.PlayerActivity
 import com.gwizz.myapplication.databinding.RvpodcastlistRowBinding
 import com.gwizz.myapplication.models.PodcastModel
 
@@ -21,7 +24,12 @@ class PodcastAdapter(private val podcastIdList : List<String>):
                     podcast?.apply {
                         binding.tvPodcastTitle.text = title
                         binding.tvPodcastSubtitle.text = subtitle
+                        binding.root.setOnClickListener{
+                            ExoplayerClass.startPlaying(binding.root.context, podcast)
+                            it.context.startActivity(Intent(it.context, PlayerActivity::class.java))
+                        }
                     }
+
                 }
 
         }

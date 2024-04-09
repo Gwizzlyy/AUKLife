@@ -23,13 +23,19 @@ class CategoryAdapter(private val categoryList : List<CategoryModel>) :
                 Glide.with(binding.ivThumbnail).load(category.coverurl).apply(RequestOptions().transform(RoundedCorners(32)))
                     .into(binding.ivThumbnail)
                 Log.i("Podcasts",category.podcasts.size.toString())
+                Log.i("Factalks",category.factalks.size.toString())
 
                 //  Start Podcast Activity
                 val context = binding.root.context
                 binding.root.setOnClickListener {
                     PodcastsActivity.category = category
                     context.startActivity(Intent(context, PodcastsActivity::class.java)) }
+
+
+
             }
+
+
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
