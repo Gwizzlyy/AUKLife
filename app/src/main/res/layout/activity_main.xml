@@ -65,6 +65,7 @@
                 android:id="@+id/svMainCategories"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+
                 android:layout_marginTop="16dp" >
 
                 <LinearLayout
@@ -83,7 +84,9 @@
 
             </ScrollView>
 
+
         </LinearLayout>
+
 
 
 
@@ -103,6 +106,8 @@
         android:hapticFeedbackEnabled="true"
 
         app:menu="@menu/bottom_menu" />
+
+
 
 
 </RelativeLayout>

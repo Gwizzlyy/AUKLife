@@ -4,9 +4,11 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.ImageView
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.gwizz.myapplication.adapters.CategoryAdapter
 import com.gwizz.myapplication.databinding.ActivityMainBinding
@@ -17,6 +19,8 @@ import com.gwizz.myapplication.models.CategoryModel
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var categoryAdapter: CategoryAdapter
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen()
@@ -29,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             val explicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.auk.edu.kw/"))
             startActivity(explicitIntent)
         }
+
 
     }
 
