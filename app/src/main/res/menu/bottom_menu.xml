@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home_page"
+        android:title="@string/home_menu"
+        android:icon="@drawable/icon_home"/>
+
+    <item android:id="@+id/mag_page"
+        android:title="@string/magazines_menu"
+        android:icon="@drawable/icon_magazine"/>
+
+    <item android:id="@+id/podcast_page"
+        android:title="@string/podcasts_menu"
+        android:icon="@drawable/icon_podcasts"/>
+</menu>
